@@ -1,0 +1,104 @@
+@import url(../../build/css/bootstrap.min.css);
+@font-face {
+  font-family: ProximaNova;
+  src: url(../fonts/proxima-nova-regular.otf);
+}
+
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url(../fonts/proxima-nova-bold.otf);
+}
+
+header {
+  padding-top: 28px;
+  height: 700px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  background-image: url(../img/bg-header.png);
+  background-position: center center;
+}
+
+header .nav-sections {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: ProximaNova;
+  text-transform: uppercase;
+}
+
+header .nav-sections .nav-logo {
+  width: 115px;
+  float: left;
+  font-size: 26px;
+  line-height: 0.962;
+  color: #fff;
+  text-align: left;
+}
+
+header .nav-sections .nav-logo span {
+  color: #ffd713;
+}
+
+header .nav-sections .nav-items {
+  float: left;
+  margin-top: inherit;
+  margin-left: 33px;
+  font-size: 16px;
+  width: 758px;
+}
+
+header .nav-sections .nav-items ul {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  float: right;
+  list-style: none;
+  line-height: 2.4;
+}
+
+header .nav-sections .nav-items ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .nav-sections .nav-items .active {
+  background-color: #FF1A3A;
+  border-radius: 20px;
+  padding: 0px 15px;
+}
+
+header .nav-sections .nav-phone {
+  min-width: 200px;
+  float: right;
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+header .nav-sections .nav-phone:before {
+  content: '';
+  border-radius: 50%;
+  background-image: url(../img/icon-phone.svg);
+  background-position: 6px 7px;
+  background-repeat: no-repeat;
+  background-color: #E450FF;
+  box-shadow: 0px 10px 15px 0px rgba(48, 48, 49, 0.31);
+  width: 35px;
+  height: 35px;
+  margin: -5px 7px 0px -19px;
+  display: block;
+  float: left;
+}
+
+header .header-block {
+  width: 80vw;
+  margin: 115px auto;
+}
+
+header .header-block .header-text {
+  margin-top: 0;
+  background-image: url(../img/text-header.svg);
+}
