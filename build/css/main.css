@@ -26,7 +26,6 @@ header {
 
 header .nav-sections {
   max-width: 1200px;
-  padding: 0 15px;
   margin: 0 auto;
   letter-spacing: 1px;
   font-weight: bold;
@@ -109,7 +108,6 @@ header .nav-sections .nav-phone:before {
 header .header-block {
   margin: 115px auto;
   max-width: 1170px;
-  padding: 0px 15px;
 }
 
 header .header-block .header-text {
@@ -204,13 +202,51 @@ header .header-pay .pay-bonus {
 }
 
 header .pay-form {
-  height: 290px;
-  padding: 0px 15px;
+  min-height: 290px;
   background-color: #50c3ff;
   margin-top: -150px;
   z-index: 2;
   border-radius: 5px;
-  display: none;
+  color: #2e2e2e;
+  font-size: 13px;
+  font-family: ProximaNova;
+  color: #2e2e2e;
+  font-weight: bold;
+  text-align: right;
+}
+
+header .pay-form h2 {
+  font-size: 26px;
+  font-family: ProximaNova;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1.2;
+  width: 260px;
+  text-align: left;
+  color: #fff;
+  margin-top: 47px;
+  margin-bottom: 42px;
+  text-transform: uppercase;
+  margin-left: 48px;
+}
+
+header .pay-form h2:before {
+  content: '';
+  width: 45px;
+  height: 35px;
+  margin-left: -51px;
+  margin-top: -8px;
+  position: absolute;
+  background-image: url(../img/icon-pay-white.svg);
+  background-position: 8px 10px;
+  background-repeat: no-repeat;
+}
+
+header .pay-form form {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -10px;
+  margin-top: 0px;
 }
 
 header .pay-form .pay-form-close {
@@ -226,4 +262,89 @@ header .pay-form .pay-form-close {
 
 header .pay-form .pay-form-close:active {
   opacity: 0.8;
+}
+
+header .pay-form select {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/icon-dropdown.svg) 96% 55% no-repeat #fff;
+  background-size: 10px;
+}
+
+header .pay-form select, header .pay-form input {
+  min-width: 170px;
+  height: 55px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 80px 0 15px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+header .pay-form #datepicker {
+  padding: 0 25px 0 15px;
+}
+
+header .pay-form #datepicker:focus {
+  color: #cccccc;
+}
+
+header .pay-form .pay-form-submit {
+  cursor: pointer;
+  -webkit-appearance: none;
+  border-radius: 23px;
+  background-color: #FF1A3A;
+  width: 230px;
+  height: 50px;
+  display: block;
+  margin-right: 20px;
+  margin-left: 15px;
+  color: #fff;
+  line-height: 3.2;
+  padding-right: 20px;
+  font-size: 16px;
+  font-family: ProximaNova;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header .pay-form .pay-form-submit:hover {
+  opacity: 0.9;
+}
+
+header .pay-form .pay-form-submit:active {
+  opacity: 1;
+}
+
+header .pay-form .pay-form-submit:before {
+  content: '';
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px 0px rgba(48, 48, 49, 0.2);
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icon-block.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 11px;
+  position: absolute;
+  margin-left: -66px;
+}
+
+header .pay-form .form-description {
+  text-align: left;
+  width: auto;
+  color: #fff;
+  margin-left: -8px;
+  margin-top: 17px;
+  letter-spacing: .5px;
+}
+
+header .pay-form .form-description span:nth-child(2) {
+  margin-left: -15px;
+}
+
+header .pay-form .form-description span:nth-child(3), header .pay-form .form-description span:nth-child(4) {
+  margin-left: 10px;
 }

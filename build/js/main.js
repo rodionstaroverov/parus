@@ -4,5 +4,8 @@ $(document).ready(function() {
     })
     $(".pay-form-close").click(function () {
         $(".pay-form").css("display", "none");
-    })
+    });
+    $(function() {
+        $("#datepicker").datepicker();
+    } );
 });

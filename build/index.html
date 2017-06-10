@@ -5,11 +5,13 @@
 	<title>Summer Park</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/datepicker.css">
     <!--bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <!--bootstrap-->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
 </head>
 <body>
     <header>
@@ -34,13 +36,41 @@
                 <div class="pay-button">хочу в аквапарк</div>
                 <div class="pay-bonus">и получить бесплатный бонус</div>
             </div>
-            <form action="" class="pay-form col-md-12">
+            <div class="pay-form col-md-12">
+                <h2>Заказ билета</h2>
+                <form action="js/action.js">
+                    <select name="option" required="required">
+                        <option value="optimal">ОПТИМАЛЬНЫЙ - 4 часа</option>
+                        <option value="classic">Классический - 3 часа</option>
+                        <option value="econom">Экономный - 2 часа</option>
+                        <option value="extra">Экстра - 5 часов</option>
+                    </select>
+                    <select name="adults" required="required">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <select name="kids">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        asd
+                    </select>
+                    <input value="Выберите дату" id="datepicker" required="required" />
+                    <div type="submit" class="pay-form-submit">Забронировать</div>
+                </form>
+                <div class="form-description row">
+                    <span class="col-md-3">Выбранный тариф</span>
+                    <span class="col-md-2">Количество взрослых</span>
+                    <span class="col-md-2">Количесвто детей</span>
+                    <span class="col-md-2">Дата</span>
+                </div>
                 <div class="pay-form-close"></div>
             </form>
         </div>
-
     </header>
-
     <footer></footer>
     <script src="js/main.js"></script>
 </body>
